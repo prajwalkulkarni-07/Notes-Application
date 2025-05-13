@@ -8,8 +8,10 @@
     "node": ">=18.0.0"
   },
   "scripts": {
+    "frontend": "vite",
+    "backend": "node ./backend/index.js",
     "build": "npm install && cd frontend && npm install",
-    "start": "npm run dev && cd frontend && npm run dev"
+    "start": "npm run backend && cd frontend && npm run frontend"
   },
   "keywords": [],
   "author": "",
